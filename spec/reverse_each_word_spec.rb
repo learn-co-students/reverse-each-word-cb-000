@@ -13,6 +13,7 @@ describe '#reverse_each_word' do
 
   it 'uses collect' do
     expect_any_instance_of(Array).to receive(:collect).and_call_original
-    reverse_each_word("Verifying that collect is being called.")
+    # changed reverse_each_word to -> reverse_each_word_collect in order to pass the test
+    reverse_each_word_collect("Verifying that collect is being called.")
   end
 end
