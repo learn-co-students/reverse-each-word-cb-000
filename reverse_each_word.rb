@@ -10,8 +10,7 @@ end
 =end
 def reverse_each_word(sentence)
   word_array = sentence.split
-  reverse_word_array = []
   word_array.collect do |word|
-     puts word.reverse
+     word.reverse
   end
 end
