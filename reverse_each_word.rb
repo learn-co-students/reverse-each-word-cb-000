@@ -1,10 +1,17 @@
 def reverse_each_word(sentence)
 
 	letters = sentence.split
+	my_arr = []
 
-	letters.map do |x|
+	letters.collect do |x|
 
-		x.reverse
+
+     my_arr <<  x.reverse
+
 	end
-	letters.join(" ")
+	my_arr.join(" ")
+
+    
 end
+
+ puts reverse_each_word("Hello there, and how are you?")
