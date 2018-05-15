@@ -10,9 +10,16 @@ end
 =end
 
 # the same but using .collect
+=begin
 def reverse_each_word(sentence)
   sentence.split.collect do |flip|
     flip.reverse
   end
      .join(' ')
+end 
+=end
+
+#better way 
+def reverse_each_word(sentence)
+  sentence.split(" ").collect {|flip| flip.reverse}.join(" ")
 end 
